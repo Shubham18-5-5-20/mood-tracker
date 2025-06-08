@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="m-0 p-0 bg-amber-200">
+    <svg class="absolute top-0 -left-10 w-[1000px] h-[1000px] opacity-50 -z-10 m-0 p-0 " viewBox="50 60 200 200  "
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill="#60A5FA "
+            d="M47.6,-55.4C63,-43.8,77.7,-30,79,-15.1C80.2,-0.2,67.9,16,56.6,30C45.3,44.1,35,56,21.2,63.2C7.3,70.5,-10.1,73,-23.4,67C-36.7,61,-45.9,46.4,-52.9,31.8C-59.9,17.1,-64.7,2.4,-65.8,-15.2C-67,-32.8,-64.5,-53.3,-52.9,-65.6C-41.3,-77.9,-20.6,-81.9,-2.3,-79.2C16.1,-76.5,32.2,-67,47.6,-55.4Z"
+            transform="translate(100 100)" />
+    </svg>
+    <svg class="absolute top-0 -right-10  w-[1000px] h-[1000px] opacity-50 -z-10 m-0 p-0 " viewBox="-40 -1 200 200  "
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill="#925dcc  "
+            d="M47.6,-55.4C63,-43.8,77.7,-30,79,-15.1C80.2,-0.2,67.9,16,56.6,30C45.3,44.1,35,56,21.2,63.2C7.3,70.5,-10.1,73,-23.4,67C-36.7,61,-45.9,46.4,-52.9,31.8C-59.9,17.1,-64.7,2.4,-65.8,-15.2C-67,-32.8,-64.5,-53.3,-52.9,-65.6C-41.3,-77.9,-20.6,-81.9,-2.3,-79.2C16.1,-76.5,32.2,-67,47.6,-55.4Z"
+            transform="translate(100 100)" />
+    </svg>
+    <div class="navbar flex flex-col  left-10 top-50 fixed [&>*]:mb-20 text-3xl ">
+
+        <a href="index.html" class="home hover:cursor-pointer  ">
+            <i class="fa-solid fa-house hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]"></i>
+        </a>
+
+
+        <a href="calendar.html" class="calendar hover:cursor-pointer">
+            <i class="fa-solid fa-calendar-days hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]"></i>
+        </a>
+
+        <a href="" class="profile hover:cursor-pointer ">
+            <i class="fa-solid fa-user hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]"></i>
+        </a>
+    </div>
+
+    <div class="hero-section  w-200 h-70 mx-auto mt-50 flex flex-col items-center justify-center  ">
+        <div class="dayReview text-6xl font-bold text-wrap w-140 text-center">HOW WAS YOUR DAY TODAY?</div>
+        <div class="input flex m-0 p-0 gap-0">
+            <input type="text" placeholder="Take Note"
+                class="bg-white m-1 w-150 h-10 px-5 py-2 rounded-2xl border border-gray-300 shadow-sm focus:border-purple-500 transition focus:outline-none">
+            <button class="emoji-selector hover:cursor-pointer ">
+                <i class='fas fa-theater-masks' style='font-size:38px;color:rgb(11, 15, 227)'></i>
+            </button>
+           
+             
+        </div>
+        <div class="save mt-5 bottom-5">
+            <button
+                class="saveBtn bg-purple-800 inline px-6 py-1 w-32 rounded-xl text-xl text-white font-bold shadow-2xl hover:bg-purple-900 ">Save</button>
+        </div>
+    </div>
+
+    <div class="suggestions mt-20 flex flex-col items-center">
+        <div class="sugg1 bg-blue-100 backdrop-blur rounded-xl shadow px-6 py-4 mb-2 hover:bg-blue-200 w-225">
+            <div class="sugg1-heading text-2xl font-bold ">Quick Body Boost</div>
+            <div class="sugg1-body">Drink a glass of cold water and do 20 jumping jacks — it wakes your body and brain
+                up like magic.</div>
+        </div>
+        <div class="sugg2 bg-blue-100 backdrop-blur rounded-xl shadow px-6 py-4 mb-2 hover:bg-blue-200 w-225">
+            <div class="sugg2-heading text-2xl font-bold">Sky Therapy</div>
+            <div class="sugg2-body">Step outside (or look out the window) and just watch the sky for a minute — clouds,
+                stars, or sunshine, it all helps.</div>
+        </div>
+        <div class="sugg3 bg-blue-100 backdrop-blur rounded-xl shadow px-6 py-4 mb-2 hover:bg-blue-200 w-225">
+            <div class="sugg3-heading text-2xl font-bold"> Memory Flashback</div>
+            <div class="sugg3-body">Scroll to a photo/memory that made you smile — reliving happy moments shifts your
+                mood fast.</div>
+        </div>
+        <div class="sugg4 bg-blue-100 backdrop-blur rounded-xl shadow px-6 py-4 mb-2 hover:bg-blue-200 w-225">
+            <div class="sugg4-heading text-2xl font-bold">Tiny Win Reminder</div>
+            <div class="sugg4-body">Think of one thing you've done recently that you’re proud of — even if it’s small,
+                it counts big.</div>
+        </div>
+        <div class="sugg5 bg-blue-100 backdrop-blur rounded-xl shadow px-6 py-4 mb-2 hover:bg-blue-200 w-225">
+            <div class="sugg5-heading text-2xl font-bold">Song That Feels Like You</div>
+            <div class="sugg5-body">Play that one track that just gets you — music changes the entire vibe of a moment.
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
